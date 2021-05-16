@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
-app.use(body_parser.urlencoded({ extended: false }));
+app.use(body_parser.json());
 const port = process.env.PORT || 3000;
 
 const mongoUri =
