@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const body_parser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 app.use('/uploads', express.static('uploads'));
 app.use(body_parser.urlencoded({ extended: false }));
 const port = process.env.PORT || 3000;
