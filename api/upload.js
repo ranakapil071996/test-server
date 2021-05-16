@@ -7,7 +7,7 @@ const router = require('express').Router();
 router.get('/', async (req, res) => {
   try {
     const userkyc = await UserKYC.find();
-    res.status(400).json({ success: true, data: userkyc });
+    res.status(200).json({ success: true, data: userkyc });
   } catch (err) {
     res.status(400).json({ success: false, msg: 'Server Error' });
   }
