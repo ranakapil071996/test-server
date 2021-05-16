@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "node index"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,6 @@
     "html-pdf": "^3.0.1",
     "md5": "^2.3.0",
     "mongoose": "^5.12.9",
-    "nodemon": "^2.0.7",
     "pdfkit": "^0.12.1"
   }
 }
